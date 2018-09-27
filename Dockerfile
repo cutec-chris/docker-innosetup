@@ -1,3 +1,6 @@
 FROM tianon/wine
 COPY is/* /root/
-ENTRYPOINT startup.sh
+COPY startup.sh /usr/local/bin/startup.sh
+ENV WINEPATH "Z:/root"
+
+ENTRYPOINT ["bash","/usr/local/bin/startup.sh"]
