@@ -1,3 +1,3 @@
 FROM tianon/wine
-COPY is/* /root
+COPY is/* /root/
 ENTRYPOINT winecmd
